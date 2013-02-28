@@ -334,7 +334,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>4</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
@@ -350,7 +350,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>../source/hw;../source</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -390,6 +390,13 @@
       <Groups>
         <Group>
           <GroupName>app</GroupName>
+          <Files>
+            <File>
+              <FileName>app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\app\app.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>hal</GroupName>
@@ -411,6 +418,11 @@
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\source\hw\system_stm32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>io.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\source\hw\io.c</FilePath>
             </File>
           </Files>
         </Group>

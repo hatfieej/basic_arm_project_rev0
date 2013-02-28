@@ -3,6 +3,8 @@
 // ----------------------------------------------------------------------------
 
 // includes
+#include "stm32f4xx.h"
+#include "app/app.h"
 
 // definitions
 
@@ -12,6 +14,20 @@
 // main
 // ----------------------------------------------------------------------------
 int main(void){
+	// initialize application
+	app_initialize();
+
+	// configure systick
+	SysTick_Config(168000);
+
 	// loop forever
 	while(1);
+}
+
+// ----------------------------------------------------------------------------
+// systick
+// ----------------------------------------------------------------------------
+void SysTick_Handler(void){
+	// call application event
+	app_event();
 }
