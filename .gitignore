@@ -1,2 +1,8 @@
+# ignore Eclipse C/C++ project files
 .cproject
 .project
+
+# ignore Keil files except project file
+keil/output/*
+keil/*
+!keil/project.uvproj
